@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build a Sub</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/Css/main.css">
+    <link rel="stylesheet" href="/Css/build.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+
+</head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: orange; font-size:xx-large">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/Index.html"><img src="/Assets/BurGer.png" alt="logo" style="width: 150px;height: 150px; border-radius: 75px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav u-list" >
+              
+              <li class="i-list"  >
+                <strong><a href="/Pages/about us.html">Build A Sub</a></strong>
+              </li>
+  
+              <li class="i-list" >
+                <strong>Subs of the month</strong>
+              </li>
+  
+              <li class="i-list" >
+                <strong>Build a Sub</strong>
+              </li>
+  
+  
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+      <section>
+
+       
+
+        <header>
+
+          <div class="container">
+          <strong><p class="nameSandwich"> Lets Give Your Sandwich A Name!</p></strong>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="name-sandwich" aria-describedby="emailHelp" placeholder="Sandwich Name">
+                  </div>
+                </form>
+      
+              </div>
+            </div>
+          </div>
+
+           <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1><strong>Build Your Sub!!!</strong></h1>
+                </div>
+            </div>
+           </div> 
+
+           <div class="container">
+            
+            <h3>Bread Option</h3>
+            <h4>Note: Only one option of bread is can be selected</h4>
+
+            </div>
+          
+
+
+           <div class="container">
+                <div class="row">
+                    <div class="col-4">
+
+
+                        <div class="card" style="width: 18rem;"id="card-bread ">
+                            <img src="/Assets/brown bread.jpg" class="card-img-top" alt="brown bread">
+                            <div class="card-body">
+                              <h5 class="card-title" id="bread-name">Brown Bread</h5>
+                              <p class="card-text">Start your delicious Sub with some brown bread: Healthy!</p>
+                              <strong><p>R5,00</p></strong>
+                              <button class="btn btn-primary" type="button" id="bread-button" onclick="breadInfo ()" >Select</button>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;"id="card-bread ">
+                            <img src="/Assets/white bread.jpg" class="card-img-top" alt="white bread">
+                            <div class="card-body" >
+                              <h5 class="card-title">White Bread</h5>
+                              <p class="card-text">Start your delicious Sub with some white bread that is soft and delicious.</p>
+                              <strong><p>R10,00</p></strong>
+                              <button class="btn btn-primary" type="button" id="bread-button" onchange="breadDisableButton()">Select</button>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;" id="card-bread ">
+                            <img src="/Assets/whole weat bread.jpg" class="card-img-top" alt="whole wheat bread">
+                            <div class="card-body">
+                              <h5 class="card-title">Whole Wheat Bread</h5>
+                              <p class="card-text">Start your delicious Sub with some whole wheat bread that is healthy and delicious.</p>
+                              <strong><p>R15,00</p></strong>
+                              <button class="btn btn-primary" type="button" id="bread-button" onchange="breadDisableButton()" >Select</button>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+           </div>
+           
+
+           <div class="container">
+            
+            <h3>Sauces Options</h3>
+            <h4>Note: Only three sauce options can be selected</h4>
+
+            </div>
+          
+
+
+           <div class="container">
+                <div class="row">
+                    <div class="col-3">
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/BBQ sausce.jpg" class="card-img-top" alt="BBQ sauce">
+                            <div class="card-body">
+                              <h5 class="card-title">BBQ Sauce</h5>
+                              <p class="card-text">Tasty and Traditional BBQ sauce we know.</p>
+                              <strong><p>R4,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/mustard sauce.jpg" class="card-img-top" alt="mustard sauce">
+                            <div class="card-body">
+                              <h5 class="card-title">Mustard Sauce</h5>
+                              <p class="card-text">The famously recognized mustard sauce we love to eat.</p>
+                              <strong><p>R6,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/mayo sauce.jpg" class="card-img-top" alt="mayo sauce">
+                            <div class="card-body">
+                              <h5 class="card-title">Mayonnaise</h5>
+                              <p class="card-text">What is a sandwich without this traditional sauce</p>
+                              <strong><p>R8,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/tomateo sauce.png" class="card-img-top" alt="tomateo sauce">
+                            <div class="card-body">
+                              <h5 class="card-title">Tomato Sauce</h5>
+                              <p class="card-text">Rich in flavour, color and original as it ever will get.</p>
+                              <strong><p>R2,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+           </div>
+
+
+           <div class="container">
+            
+            <h3>Meat Option</h3>
+            <h4>Note: Only one meat option can be selected</h4>
+
+            </div>
+          
+
+
+           <div class="container">
+                <div class="row">
+                    <div class="col-4">
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/Beef.jpg" class="card-img-top" alt="Beef">
+                            <div class="card-body">
+                              <h5 class="card-title">Beef Steak</h5>
+                              <p class="card-text">Medium rare delicious beef steak!</p>
+                              <strong><p>R40,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/chicken.jpg" class="card-img-top" alt="chicken">
+                            <div class="card-body">
+                              <h5 class="card-title">Chicken</h5>
+                              <p class="card-text">World renowned meat!</p>
+                              <strong><p>R20,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/ribs.jpg" class="card-img-top" alt="ribs">
+                            <div class="card-body">
+                              <h5 class="card-title">Ribs</h5>
+                              <p class="card-text">Tender, juicy and mouth...</p>
+                              <strong><p>R80,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+           </div>
+           
+
+           <div class="container">
+            
+            <h3>Topping Options</h3>
+            <h4>Note: Only five topping options can be selected</h4>
+
+            </div>
+          
+
+
+           <div class="container">
+                <div class="row">
+                    <div class="col-3">
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/lettuce.jpg" class="card-img-top" alt="lettuce">
+                            <div class="card-body">
+                              <h5 class="card-title">Lettuce</h5>
+                              <p class="card-text">Cannot forget this crunchy option!</p>
+                              <strong><p>R2,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/tomateo.jpg" class="card-img-top" alt="Tomatoes">
+                            <div class="card-body">
+                              <h5 class="card-title">Tomatoes</h5>
+                              <p class="card-text">Doesn't look bright until one is present!</p>
+                              <strong><p>R6,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/pickles.jpg" class="card-img-top" alt="pickles">
+                            <div class="card-body">
+                              <h5 class="card-title">Pickles</h5>
+                              <p class="card-text">Sour but tasty in flavour with other ingredients </p>
+                              <strong><p>R7,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="/Assets/onions.jpg" class="card-img-top" alt="onions">
+                            <div class="card-body">
+                              <h5 class="card-title">Onions</h5>
+                              <p class="card-text">The tears a worth the final result. Chefs kiss.</p>
+                              <strong><p>R10,00</p></strong>
+                              <a href="#" class="btn btn-primary" type="button">Select</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+           </div>
+
+           <div class="container">
+            <div class="row">
+                <div class="col-3">
+
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Assets/Mushrooms.jpg" class="card-img-top" alt="Mushrooms">
+                        <div class="card-body">
+                          <h5 class="card-title">Mushrooms</h5>
+                          <p class="card-text">Juicy, flavorful, aromatic and great texture!</p>
+                          <strong><p>R15,00</p></strong>
+                          <a href="#" class="btn btn-primary" type="button">Select</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Assets/cheese.jpg" class="card-img-top" alt="cheese">
+                        <div class="card-body">
+                          <h5 class="card-title">Cheese</h5>
+                          <p class="card-text">Creamy, melting, sticky doesn't get better.</p>
+                          <strong><p>R10,00</p></strong>
+                          <a href="#" class="btn btn-primary" type="button">Select</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Assets/olives.jpg" class="card-img-top" alt="olives">
+                        <div class="card-body">
+                          <h5 class="card-title">Olives</h5>
+                          <p class="card-text">Most don't like it but full of flavor.</p>
+                          <strong><p>R10,00</p></strong>
+                          <a href="#" class="btn btn-primary" type="button">Select</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/Assets/chillie.jpg" class="card-img-top" alt="chillie">
+                        <div class="card-body">
+                          <h5 class="card-title">Chillies</h5>
+                          <p class="card-text">Want to keep it spicy we got you.</p>
+                          <strong><p>R5,00</p></strong>
+                          <a href="#" class="btn btn-primary" type="button">Select</a>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+       </div>
+
+       <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <strong class="price-current"><p class="card-text">R0,00</p></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <div class="container">
+        <button type="button" class="btn btn-primary makeSand" onclick="displaySandwich()"><strong>Make Sandwich</strong></button>
+      </div>
+
+       <div class="container">
+        <strong><p class="current-order-text">Your current orders</p></strong>
+       </div>
+
+       <div class="container">
+        <hr>
+       </div>
+
+       <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <strong class="order-current"><p class="card-text">Name:</p></strong>
+                <strong class="order-current"><p class="card-text">Bread:</p></strong>
+                <strong class="order-current"><p class="card-text">Sauce:</p></strong>
+                <strong class="order-current"><p class="card-text">Meat:</p></strong>
+                <strong class="order-current"><p class="card-text">Toppings:</p></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+    
+
+
+        </header>
+            
+        
+
+      </section>
+  
+  </body>
+</html>
